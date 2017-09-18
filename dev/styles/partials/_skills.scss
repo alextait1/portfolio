@@ -5,7 +5,7 @@
 .skills__heading-container{
 	flex-direction:column;
 	justify-content:space-between;
-	padding-top: 8%;
+	padding-top: 10%;
 }
 
 .skills__heading{
@@ -17,9 +17,9 @@
     content:"";
     border-top: 1px solid $darkGrey;
     display: inline-block;
-    width: 15%;
+    width: 35%;
     position: absolute;
-    left:-20%;
+    left:-40%;
     top:50%;
     transform: translateY(-50%);
   	}
@@ -27,9 +27,9 @@
     content:"";
     border-top: 1px solid $darkGrey;
     display: inline-block;
-    width: 15%;
+    width: 35%;
     position: absolute;
-    right:-20%;
+    right:-40%;
     top:50%;
     transform: translateY(-50%);
   }

@@ -110,6 +110,7 @@
 	    	border: 3px solid $yellow;
 	    	border-radius: 10px;
 	    	transition: all 0.3s;
+	    	background-color: lighten($yellow, 30%);
 	    }
 	}
 	label{
@@ -133,6 +134,7 @@
 	    	border: 3px solid $yellow;
 	    	border-radius: 10px;
 	    	transition: all 0.3s;
+	    	background-color: lighten($yellow, 30%);
 	    }
 	}
 	label{
