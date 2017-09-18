@@ -1,0 +1,55 @@
+
+.aboutMe{
+	position: relative;
+}
+
+.aboutMe__heading{
+	position: absolute;
+	left:50%;
+	transform:translateX(-50%);
+	text-align: center;
+	top:-35%;
+	&:before {
+    content:"";
+    border-top: 1px solid $darkGrey;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    left:-20%;
+    top:50%;
+    transform: translateY(-50%);
+  	}
+	&:after {
+    content:"";
+    border-top: 1px solid $darkGrey;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    right:-20%;
+    top:50%;
+    transform: translateY(-50%);
+	}
+}
+.aboutMe__container-outer{
+	background-image: url(../../assets/wireframing.jpg);
+	background-size: cover;
+	padding: 6% 6% 0 40%;
+}
+
+.aboutMe__container-inner{
+	background: $bodyGrey3;
+	padding:5%;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.aboutMe__text-heading{
+	margin-bottom: 30px;
+}
+
+.interests__text-heading{
+	margin:40px 0 40px 0;
+}
+
+.p__two-about{
+	margin-top: 25px;
+}

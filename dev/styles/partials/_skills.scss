@@ -1,0 +1,93 @@
+.skills{
+	position: relative;
+}
+
+.skills__heading{
+	position: absolute;
+	left:50%;
+	transform:translateX(-50%);
+	text-align: center;
+	&:before {
+    content:"";
+    border-top: 1px solid $darkGrey;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    left:-20%;
+    top:50%;
+    transform: translateY(-50%);
+  	}
+	&:after {
+    content:"";
+    border-top: 1px solid $darkGrey;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    right:-20%;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
+.skills__heading-container{
+	flex-direction:column;
+	justify-content:space-between;
+	padding-top: 10%;
+}
+
+.skills__tagline{
+	padding-top: 70px;
+}
+
+.skills__cards{
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+.skills__card {
+	padding: 6%;
+	width:31%;
+	margin-bottom: 30px;
+	background: $lightCyan;
+	img{
+	width: 100%;
+	}
+}
+
+.skill__cards-sublime{
+	background: $cyan;
+}
+
+.skills__card-html{
+	background: $blue;
+}
+
+.skills__card-sass{
+	background: $purple;
+}
+
+.skills__card-javascript{
+	background: $greyOne;
+}
+
+.skills__card-jquery{
+	background: $greyTwo;
+}
+
+.skills__card-react{
+	background: $greyThree;
+}
+
+.skills__card-git{
+	background: $yellow;
+}
+
+.skills__card-gulp{
+	background: $greyFour;
+}
+
+.skills__card-github{
+	background: $green;
+}
+
+

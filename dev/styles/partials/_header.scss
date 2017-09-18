@@ -1,0 +1,97 @@
+.site__banner{
+	justify-content: space-between;
+}
+
+.site__banner-icon{
+	margin-top: 45px;
+	height:44px;
+	color:$darkGrey;
+}
+
+.site__banner-logo{
+	font-family:$logo;
+	font-size: 38px;
+	line-height: 36px;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-top:48px;
+	color:$darkGrey;
+}
+
+nav {
+	ul{
+		margin:0;
+		padding:0;
+		margin-top:66px;
+	}
+	li{
+		list-style: none;
+		padding:0px 13px 0 13px;
+		font-size: 15px;
+		text-transform: uppercase;
+		color:$darkGrey;
+		&:hover{
+			background: $cyan;
+			color:white;
+			border: 1px solid $cyan;
+			border-radius: 5px;
+			padding:5px 18px 5 18px;
+			transform:scale(1.1);
+			transition: all ease-in 0.1s;
+		}
+	}
+}
+
+.site__title{
+	margin-top: 100px;
+	margin-bottom: 110px;
+	text-align: center;
+	.cyan{
+	color: $cyan;
+	}
+}
+
+.about{
+	background-image: url(../../assets/coding2.jpg);
+	background-size: cover;
+	justify-content:center;
+}
+
+
+.about__text-container{
+	background: $bodyGrey2;
+	margin-left: 80px;
+	margin-right: 80px;
+	align-self: flex-end;
+	 h3{
+	 	padding: 85px 140px 60px 140px;
+	 	text-align: center;
+	 }
+	 .about__text-p{
+	 	padding-bottom: 115px;
+	 }
+	 p{
+	 	text-align: center;
+	 	padding-left: 125px;
+	 	padding-right: 125px;
+	 }
+}	
+
+.button__container-home{
+	flex-direction:column;
+	align-items: center;
+	.fa-bookmark-o{
+		font-size: 50px;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+}
+
+.project__link{
+	font-style: 14px;
+}
+
+
+
+

@@ -62,6 +62,7 @@ gulp.task('watch', function() {
     gulp.watch('./dev/styles/**/*.scss', ['styles']);
     gulp.watch('./dev/scripts/main.js', ['scripts']);
     gulp.watch('*.html', reload);
+    gulp.watch('./dev/assets/**/*', ['assets']);
 });
 
 // default task
