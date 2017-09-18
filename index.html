@@ -5,6 +5,7 @@
 	<title>Alex Tait Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="public/styles/style.css">
+	<script src="https://use.fontawesome.com/74c9d4281a.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:600" rel="stylesheet">
 </head>
 <body>
@@ -17,10 +18,10 @@
 			</div>
 			<nav class="site__banner-right">
 				<ul class="flex">
-					<a href="top"><li>Home</li></a>
-					<a href="#projects"><li>Portfolio</li></a>
-					<a href="#skills"><li>Skills</li></a>
-					<a href="#contact"><li>Contact</li></a>
+					<a href="#projects" class="scroll"><li>Portfolio</li></a>
+					<a href="#skills" class="scroll"><li>Skills</li></a>
+					<a href="#about" class="scroll"><li>About</li></a>
+					<a href="#contact" class="scroll"><li>Contact</li></a>
 				</ul>
 			</nav>
 		</div>
@@ -36,8 +37,8 @@
 				<div class="about__text wrapper">
 					<h3>I'm completely enamoured with web development becuase of its combination of science and magic. I love having the ability to make something from nothing and be one of the architects of what we see and interact with every day!</h3>
 					<div class="button__container-home flex">
-						<a href="#projects"><button>See Some of My Projects</button></a>
-						<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+						<a href="#projects" class="button__projects scroll"><button>See Some of My Projects</button></a>
+						<!-- <i class="fa fa-bookmark-o" aria-hidden="true"></i> -->
 					</div>
 					<div class="about__text-p wrapper__small">
 						<p class="p__one">I wrote my first "hello world" html program in a plain text document in the summer of 2016 and was instantly hooked. On the one hand, I couldn't believe that making something display in a browser was actually as easy as writing a sentence. On the other hand, I realized immediately that if I wanted to make anything good, I would need to dive into a deep world of knowledge and practice.</p>
@@ -48,7 +49,7 @@
 		</div>
 	</section>
 
-	<section class="projects" id="projects">
+	<section class="projects scroll" id="projects">
 		<div class="wrapper">
 			<div>
 				<div class="projects__heading-container flex">
@@ -128,7 +129,7 @@
 			
 		</div>
 
-		<section class="skills wrapper" id="skills">
+		<section class="skills wrapper scroll" id="skills">
 			<div class="skills__heading-container flex">
 				<h2 class="skills__heading">skills</h2>
 				<p class="tagline skills__tagline">Skills I Have & Tools I Like</p>
@@ -173,8 +174,8 @@
 			</div>
 		</section>
 
-		<section class="aboutMe wrapper">
-			<div class=>
+		<section class="aboutMe wrapper scroll" id="about">
+			<div class="aboutMe__heading-container flex">
 				<h2 class="aboutMe__heading">About Me</h2>
 				<p class="tagline aboutMe__tagline">A little bit about where I'm coming from and where I hope to go</p>
 			</div>
@@ -191,24 +192,84 @@
 			</div>
 		</section>
 
-		<section class="contact wrapper" id="contact">
-		<div class="wrapper__small">
-				<h2 class="contact__heading">contact</h2>
-			<p class="tagline contact__tagline">Get In Touch!</p>
-			<div class="contact__p-containe">
-				<p class="contact__p">Whether you have a question about my work, my code or you think I might be a fit on your team, I would love to hear from you! Feel free to send me an email directly or fill out the contact form below.</p>
+		<section class="contact wrapper scroll" id="contact">
+			<div class="contact__container wrapper__small">
+				<div class="contact__heading-container flex">
+						<h2 class="contact__heading">contact</h2>
+						<a href="#direct"><p class="tagline contact__tagline">Get In Touch!</p></a>
+				</div>
+				<div class="contact__email-container flex">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<p class="email__address">alexandratait@gmail.com</p>
+				</div>
+				<div class="button__hireMe-container">
+					<button class="button__hireMe" onclick="window.location.href='mailto:alexandratait@gmail.com'">Hire Me!</button>
+				</div>
+				<div class="contact__p-container">
+					<p class="contact__p wrapper__small">Whether you have a question about my work, my code or you think I might be a fit on your team, I would love to hear from you! Feel free to send me an email directly or fill out the contact form below.</p>
+				</div>
+
+				<form class="contact__form wrapper__small" action="https://formspree.io/alexandratait@gmail.com" >
+					<h3 class="form__header" id="direct">Send a Direct Message</h3>
+					<div class="form__row-one flex wrapper__small">
+						<div class="input__text-name flex">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name">
+						</div>
+						
+						<div class="input__text-email flex">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email">
+						</div>
+					</div>
+
+					<div class="form__row-two input__textarea flex">
+						<label for="message">Message:</label>
+						<textarea name="message" id="message" cols="30" rows="5"></textarea>
+					</div>
+					<div class="button__submit-container">
+						<input type="submit" value="Send Message" class="button__submit-message">
+					</div>
+				</form>
 			</div>
-		</div>
-			<div class="map__container flex">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23088.436130121347!2d-79.36312890097399!3d43.66783600698442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1505671036467" width="1170" height="420" frameborder="0" style="border:0" allowfullscreen class="map">
-				</iframe>
-			</div>
-			<button class="hireMe">Hire Me!</button>
 		</section>
+		<footer>
+			<div class="footer__container flex">
+				<div class="footer__left">
+					<h5 class="footer__h5">Recent Blog Posts</h5>
+					<a href="https://medium.com/@alexandra.tait/twitter-share-buttons-a3b1995bcae7"><h6>Twitter Share Buttons</h6></a>
+					<p class="small_grey">Sept 16th, 2017</p>
+					<h6>Convergent Vs Divergent Thinking & Coding</h6>
+					<p class="small_grey">Aug 1st, 2017</p>
+				</div>
+				<div class="footer__right">
+					<h5>Connect With Me</h5>
+					<div class="footer__icons flex">
+						<div class="icon__box flex">
+							<a href="https://medium.com/@alexandra.tait">
+								<i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+								<p>@alexandra.tait</p>
+							</a>
+						</div>
+						<div class="icon__box flex">
+							<a href="https://twitter.com/AT_Fresh_Dev">
+								<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+								<p>@AT_Fresh_Dev</p>
+							</a>
+						</div class="icon__box flex">
+						<div>
+							<a href="https://github.com/alextait1">
+								<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+								<p>@alextait1</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://use.fontawesome.com/74c9d4281a.js"></script>
 	<script src="public/scripts/main.js"></script>
 	
 </body>

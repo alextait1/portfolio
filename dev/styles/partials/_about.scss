@@ -1,14 +1,17 @@
 
-.aboutMe{
+.aboutMe__heading-container{
 	position: relative;
+	flex-direction:column;
+	justify-content:space-between;
+	// padding-top: 10%;
 }
 
 .aboutMe__heading{
+	margin-top:60px;
 	position: absolute;
 	left:50%;
 	transform:translateX(-50%);
 	text-align: center;
-	top:-35%;
 	&:before {
     content:"";
     border-top: 1px solid $darkGrey;

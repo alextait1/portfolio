@@ -2,6 +2,12 @@
 	position: relative;
 }
 
+.skills__heading-container{
+	flex-direction:column;
+	justify-content:space-between;
+	padding-top: 8%;
+}
+
 .skills__heading{
 	position: absolute;
 	left:50%;
@@ -29,11 +35,6 @@
   }
 }
 
-.skills__heading-container{
-	flex-direction:column;
-	justify-content:space-between;
-	padding-top: 10%;
-}
 
 .skills__tagline{
 	padding-top: 70px;

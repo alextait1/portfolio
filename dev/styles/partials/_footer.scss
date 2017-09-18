@@ -1,0 +1,31 @@
+footer{
+	margin-top:50px;
+}
+
+.footer__container{
+	justify-content: space-between;
+}
+
+.footer__left,
+.footer__right{
+	width:50%;
+	padding-top: 130px;
+}
+
+.footer__right{
+	.icon__box{
+		width:33%;
+	}
+	.icons{
+		width:30px;
+		img{
+			width:100%;
+		}
+	}
+}
+
+.icon__box{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items:center;
+}
