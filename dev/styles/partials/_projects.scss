@@ -50,6 +50,9 @@
 	transform:translateX(-50%);
 	text-align: center;
 	top:-35%;
+	@include respond-to(medium){
+		top:-5%;
+	}
 	&:before {
     content:"";
     border-top: 1px solid $darkGrey;
@@ -78,6 +81,22 @@
 
 .other__projects{
 	position: relative;
+}
+
+h3.hidden{
+	display: none;
+	@include respond-to(medium){
+		display: block;
+		margin-top: 30px;
+	}
+}
+
+.kitty__text-name,
+.cocktail__text-name,
+.univers__text-name{
+	@include respond-to(medium){
+		display: none;
+	}
 }
 
 .dragRace__heading-container{
@@ -117,34 +136,70 @@
 	.about__dragRace-heading{
 		margin-bottom: 60px;
 	}
+	@include respond-to(medium){
+		flex-direction:column;
+		padding-bottom: 130px;
+	}
 }
 
 .about__dragRace-main{
 	width:72%;
 	padding-right: 130px;
+	@include respond-to (large){
+		width:66%;
+		padding-right: 60px;
+		padding-left: 10px;
+	}
+	@include respond-to(medium){
+		width:100%;
+		padding-right: 10px;
+	}
 }
 
 .about__dragRace-aside{
 	width:28%;
+	@include respond-to(large){
+		width:34%;
+	}
+	@include respond-to (medium){
+		width:100%;
+	}
 	.project__link{
 		margin-bottom: 40px;
+		@include respond-to(medium){
+			margin: 20px 10px 20px 10px;
+
+		}
+	}
+}
+
+
+.other__projects-container{
+	justify-content: space-between;
+	@include respond-to (medium){
+		flex-direction: column;
+		align-items:center;
 	}
 }
 
 .projects__single{
 	width:30%;
+	@include respond-to (medium){
+		width:80%;
+	}
 	img{
 	width:100%;
 	}
 }
 
-.other__projects-container{
-	justify-content: space-between;
-}
-
 .aside__text{
 	flex-direction:column;
 	justify-content:space-between;
+	@include respond-to(medium){
+		padding-right: 20px;
+		padding-left: 20px;
+		flex-direction: row;
+	}
 }
 
 .aside__sub{
@@ -155,11 +210,17 @@
 	color:$textGrey;
 	text-transform: uppercase;
 	font-size: 14px;
+	@include respond-to(small){
+		font-size: 12px;
+	}
 }
 
 .grey__title-dark{
 	text-transform: uppercase;
 	line-height: 30px;
+	@include respond-to (small){
+		font-size:13px;
+	}
 }
 
 

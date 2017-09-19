@@ -6,6 +6,14 @@
 	margin-top: 45px;
 	height:44px;
 	color:$darkGrey;
+	padding-left:10px;
+	@include respond-to (large){
+		height:32px;
+		margin-top:54px;
+	}
+	@include respond-to (medium){
+		height:30px;
+	}
 }
 
 .site__banner-logo{
@@ -16,6 +24,12 @@
 	padding-left: 10px;
 	margin-top:48px;
 	color:$darkGrey;
+	@include respond-to (large){
+		font-size: 30px;
+	}
+	@include respond-to (medium){
+		font-size: 24px;
+	}
 }
 
 nav {
@@ -23,13 +37,23 @@ nav {
 		margin:0;
 		padding:0;
 		margin-top:66px;
+		@include respond-to(medium){
+			flex-direction: column;
+			padding-right: 40px;
+		}
+		@include respond-to(small){
+			padding-right: 20px;
+		}
 	}
 	li{
 		list-style: none;
-		padding:0px 13px 0 13px;
+		padding:5px 13px 5px 13px;
 		font-size: 15px;
 		text-transform: uppercase;
 		color:$darkGrey;
+		@include respond-to(medium){
+			border-bottom: 2px solid $cyan;
+		}
 		&:hover{
 			background: $cyan;
 			color:white;
@@ -38,6 +62,10 @@ nav {
 			padding:5px 18px 5 18px;
 			transform:scale(1.1);
 			transition: all ease-in 0.1s;
+			@include respond-to (medium){
+				background: lighten($cyan, 20%);
+				color:$darkGrey;
+			}
 		}
 	}
 }
@@ -48,6 +76,20 @@ nav {
 	text-align: center;
 	.cyan{
 	color: $cyan;
+	}
+	h1{
+		@include respond-to (x-large){
+			font-size: 55px;
+			margin: 0 auto;
+		}
+		@include respond-to (large){
+			font-size: 45px;
+			max-width: 630px;
+		}
+		@include respond-to (medium){
+			font-size: 35px;
+			max-width: 550px;
+		}
 	}
 }
 
@@ -63,22 +105,72 @@ nav {
 	margin-left: 80px;
 	margin-right: 80px;
 	align-self: flex-end;
-	 h3{
+	@include respond-to (large){
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	h3{
 	 	padding: 85px 140px 60px 140px;
 	 	text-align: center;
-	 }
-	 .about__text-p{
+	 	@include respond-to (x-large){
+	 		font-size:30px;
+	 		}
+	 	@include respond-to (large){
+	 		font-size: 26px;
+	 		padding: 70px 110px 50px 140px;
+	 		}
+	 	@include respond-to (medium){
+	 		font-size:20px;
+	 		padding: 50px 60px 40px 65px;
+	 		}
+	 	@include respond-to (small){
+	 		padding: 20px 40px 20px 37px;
+	 		}
+	 	}
+	.about__text-p{
 	 	padding-bottom: 115px;
-	 }
-	 p{
+	 	@include respond-to (medium){
+	 		padding-bottom: 45px;
+	 		}
+	 	@include respond-to (small){
+	 		padding-bottom: 30px;
+	 		}
+	 	}
+	p{
 	 	text-align: center;
 	 	padding-left: 125px;
 	 	padding-right: 125px;
-	 }
+	
+		 @include respond-to(medium){
+		 	padding-right: 45px;
+		 	padding-left: 45px;
+		 }
+		 @include respond-to (small){
+		 	padding-right: 20px;
+		 	padding-left: 20px;
+		 }
+	}
 }	
 
 .button__projects{
 	margin-bottom: 60px;
+	@include respond-to (medium){
+		margin-bottom: 50px;
+	}
+	@include respond-to (small){
+		margin-bottom: 40px;
+	}
+
+	button{
+		@include respond-to (medium){
+		font-size: 16px;
+		padding:12px 25px 12px 25px;
+		}
+	@include respond-to (small){
+		font-size: 13px;
+		padding: 10px 14px 10px 14px;
+		}
+	}
 }
 
 .button__container-home{

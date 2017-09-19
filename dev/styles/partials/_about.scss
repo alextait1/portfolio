@@ -3,7 +3,6 @@
 	position: relative;
 	flex-direction:column;
 	justify-content:space-between;
-	// padding-top: 10%;
 }
 
 .aboutMe__heading{
@@ -37,6 +36,13 @@
 	background-image: url(../../assets/wireframing.jpg);
 	background-size: cover;
 	padding: 6% 6% 0 40%;
+	@include respond-to (large){
+		padding: 6% 6% 0 6%;
+	}
+	@include respond-to(medium){
+		background:$bodyGrey;
+		padding: 2%;
+	}
 }
 
 .aboutMe__container-inner{
@@ -55,4 +61,12 @@
 
 .p__two-about{
 	margin-top: 25px;
+}
+
+.hidden__img{
+	display:none;
+	@include respond-to(medium){
+		display: block;
+		width:100%;
+	}
 }

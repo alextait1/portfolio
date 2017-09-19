@@ -42,23 +42,47 @@ h1{
 }
 
 h2{
-	font-size: 45px;	
+	font-size: 45px;
+	@include respond-to(large){
+		font-size: 36px;
+	}	
+	@include respond-to(medium){
+		font-size: 30px;
+	}	
+	@include respond-to(small){
+		font-size: 24px;
+	}	
 }
 
 h3{
 	font-size: 35px;
+	@include respond-to(large){
+		font-size: 32px;
+	}	
+	@include respond-to(medium){
+		font-size: 26px;
+	}	
+	@include respond-to(small){
+		font-size: 22px;
+	}	
 }
 
 h5{
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
+	@include respond-to(medium){
+		font-size: 16px;
+	}
 }
 
 h6{
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	@include respond-to(medium){
+		font-size: 12px;
+	}
 }
 
 .small_grey{
@@ -111,5 +135,13 @@ button{
 		background-color: darken($cyan, 10%);
 		transform:scale(1.05);
 		transition:all ease 0.2s;
+		}
+	@include respond-to (medium){
+		font-size: 16px;
+		padding:12px 25px 12px 25px;
+		}
+	@include respond-to (small){
+		font-size: 13px;
+		padding: 10px 14px 10px 14px;
+		}
 	}
-}

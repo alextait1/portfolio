@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="public/styles/style.css">
 	<script src="https://use.fontawesome.com/74c9d4281a.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:600" rel="stylesheet">
+	<link rel="stylesheet" href="dev/styles/animate.css">
+	<link type="image/png" href="assets/icons/favicon.png" rel="icon">
 </head>
 <body>
 
@@ -38,7 +40,6 @@
 					<h3>I'm completely enamoured with web development becuase of its combination of science and magic. I love having the ability to make something from nothing and be one of the architects of what we see and interact with every day!</h3>
 					<div class="button__container-home flex">
 						<a href="#projects" class="button__projects scroll"><button>See Some of My Projects</button></a>
-						<!-- <i class="fa fa-bookmark-o" aria-hidden="true"></i> -->
 					</div>
 					<div class="about__text-p wrapper__small">
 						<p class="p__one">I wrote my first "hello world" html program in a plain text document in the summer of 2016 and was instantly hooked. On the one hand, I couldn't believe that making something display in a browser was actually as easy as writing a sentence. On the other hand, I realized immediately that if I wanted to make anything good, I would need to dive into a deep world of knowledge and practice.</p>
@@ -67,7 +68,9 @@
 					</div>
 				
 					<aside class="about__dragRace-aside">
-						<a href="http://whosyourdragmama.com/"><button class="project__link">Live Site</button></a>
+						<a href="http://whosyourdragmama.com/">
+							<button class="project__link">Live Site</button>
+						</a>
 						<div class="aside__text flex">
 							<div class="aside__sub aside__sub-client">
 								<p class="grey__title-light">Client:</p>
@@ -92,7 +95,8 @@
 				</div>
 				<div class="other__projects-container flex">
 					<div class="projects__single projects__single-kitty">
-						<img src="assets/desk_img.jpg" alt="">
+						<h3 class="hidden">Ok Kitty</h3>
+						<img src="assets/desk_img.jpg" alt="ok kitty image">
 						<div class="kitty__text-name">
 							<p class="grey__title-light">Name:</p>	
 							<p class="grey__title-dark">Ok Kitty</p>
@@ -102,8 +106,9 @@
 							<p class="grey__title-dark">JavaScript, API/Ajax, Sass, BEM</p>
 						</div>
 					</div>
-					<div class="projects__single projects__single-cocktail"> 
-						<img src="assets/desk_img.jpg" alt="">
+					<div class="projects__single projects__single-cocktail">
+						<h3 class="hidden">What Cocktail Are You?</h3>
+						<img src="assets/desk_img.jpg" alt="what cocktail are you? image">
 						<div class="cocktail__text-name">
 							<p class="grey__title-light">Name:</p>	
 							<p class="grey__title-dark">What Cocktail Are You?</p>
@@ -114,7 +119,8 @@
 						</div>
 					</div>
 					<div class="projects__single projects__single-univers">
-						<img src="assets/desk_img.jpg" alt="">
+						<h3 class="hidden">Univers</h3>
+						<img src="assets/desk_img.jpg" alt="univers image">
 						<div class="univers__text-name">
 							<p class="grey__title-light">Name:</p>	
 							<p class="grey__title-dark">Univers</p>
@@ -135,40 +141,50 @@
 				<p class="tagline skills__tagline">Skills I Have & Tools I Like</p>
 			</div>
 			<div class="skills__cards flex">
-				<div class="skills__card skill__cards-sublime">
+			
+				<div class="skills__card skill__cards-sublime wow slideInLeft" title="Sublime Text">
 					<img src="assets/icons/dev_icons/sublime.png" alt="sublime icon">
+					<p class="skills__p-sublime">Sublime Text</p>
 				</div> 
 
-				<div class="skills__card skills__card-html">
+				<div class="skills__card skills__card-html wow slideInDown" title="HTML 5">
 					<img src="assets/icons/dev_icons/html.png" alt="html icon">
+					<p class="skills__p-html">HTML 5</p>
 				</div>
 
-				<div class="skills__card skills__card-sass">
+				<div class="skills__card skills__card-sass wow slideInRight" title="SASS">
 					<img src="assets/icons/dev_icons/sass.png" alt="sass icon">
+					<p class="skills__p-sass">SASS</p>
 				</div>
 
-				<div class="skills__card skills__card-javascript">
-					<img src="assets/icons/dev_icons/javascript.png" alt="javascript icon">
+				<div class="skills__card skills__card-javascript wow slideInLeft">
+					<img src="assets/icons/dev_icons/javascript.png" alt="javascript icon" "JavaScript">
+					<p class="skills__p-javascript">JavaScript</p>
 				</div>
 
-				<div class="skills__card skills__card-jquery">
+				<div class="skills__card skills__card-jquery wow slideInUp" title="jQuery">
 					<img src="assets/icons/dev_icons/jquery-icon.png" alt="jQuery icon">
+					<p class="skills__p-jquery">jQuery</p>
 				</div>
 
-				<div class="skills__card skills__card-react">
+				<div class="skills__card skills__card-react wow slideInRight" title="React">
 					<img src="assets/icons/dev_icons/react.png" alt="react icon">
+					<p class="skills__p-react">ReactJS</p>
 				</div>
 				
-				<div class="skills__card skills__card-git">
+				<div class="skills__card skills__card-git wow slideInLeft" title="Git">
 					<img src="assets/icons/dev_icons/git.png" alt="git icon">
+					<p class="skills__p-git">Git</p>
 				</div>
 
-				<div class="skills__card skills__card-gulp">
+				<div class="skills__card skills__card-gulp wow slideInUp" title="Gulp">
 					<img src="assets/icons/dev_icons/gulp.png" alt="gulp icon">
+					<p class="skills__p-gulp">gulp.js</p>
 				</div>
 
-				<div class="skills__card skills__card-github">
+				<div class="skills__card skills__card-github wow slideInRight" title="GitHub">
 					<img src="assets/icons/dev_icons/github.png" alt="github icon">
+					<p class="skills__p-github">GitHub</p>
 				</div>
 
 			</div>
@@ -179,14 +195,15 @@
 				<h2 class="aboutMe__heading">About Me</h2>
 				<p class="tagline aboutMe__tagline">A little bit about where I'm coming from and where I hope to go</p>
 			</div>
+			<img src="assets/wireframing.jpg" alt="alex tait wireframing" class="hidden hidden__img">
 			<div class="aboutMe__container-outer">
 				<div class="aboutMe__container-inner">
 					<h3 class="aboutMe__text-heading">How I Found Code</h3>
-					<p>My web development journey began with building and maintaining a few Squarespace websites for bands I have worked with. In doing that I quickly felt limited by the parameters of the basic platform. I started doing online coding turorials like Skill Crush and Code Academy and got really into it. I decided to enrole in Hacker You's part-time web development class in the fall of 2016 and that was the game changer for me. I felt so empowered and excieted by the things I was learning and applying, and I was hungry for more.</p>
-					<p class="p__two-about">I wrapped up my teaching business permanently in the spring of 2017 and as of July was attending Hacker You's full-time immersive web development bootcamp, which was just the kickstart I needed to hone my skills and get fully hooked on coding!</p>
+					<p>My web development journey began with building and maintaining a few Squarespace websites for bands I have worked with. In doing that I quickly found limitations of the basic platform, and wanted more control over the code. I started doing online coding turorials like Skill Crush and Code Academy and got super into it. I enroled in Hacker You's part-time web development class in the fall of 2016 and that was the game changer for me. I felt so empowered and excieted by the things I was learning and applying, and I was hungry for more.</p>
+					<p class="p__two-about">I wrapped up my musicteaching business permanently in the spring of 2017 and as of July was attending Hacker You's full-time immersive web development bootcamp, which was just the kickstart I needed to hone my skills and get fully hooked on coding!</p>
 
 					<h3 class="interests__text-heading">Interests</h3>
-					<p>I am highly profficient with HTML and CSS and my JavaScript/react are getting stronger every day. In terms of my long-term career vision, I am very interested in UX/UI and product design and development. My dream job would be on a team with great culture, where my exisiting skillset would be useful and where I would have some room to grow into new skills too.</p>
+					<p>I am highly profficient with HTML and CSS and my JavaScript/ReactJS are getting stronger every day. In terms of my long-term career vision, I am very interested in UX/UI and product design and development. My dream job would be on a team with great culture, where my exisiting skillset would be useful and where I would have some room to grow into new skills too.</p>
 					<p class="p__two-about">I'm currently seeking a full-time front-end web development position here in Toronto for the fall of 2017.</p>
 				</div>
 			</div>
@@ -257,20 +274,29 @@
 						</div>
 						<div class="footer__icons flex">
 							<div class="icon__box flex">
-								<a href="https://medium.com/@alexandra.tait">
-									<i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+									<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+									<!-- <i class="fa fa-linkedin-square fa-2x hidden" aria-hidden="true"></i> -->
 								</a>
-								<p>@alexandra.tait</p>
+								<p>Alex Tait</p>
 							</div>
 							<div class="icon__box flex">
 								<a href="https://twitter.com/AT_Fresh_Dev">
 									<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+									<!-- <i class="fa fa-twitter fa-2x hidden" aria-hidden="true"></i> -->
 								</a>
 								<p>@AT_Fresh_Dev</p>
 							</div class="icon__box flex">
 							<div class="icon__box flex">
+								<a href="https://medium.com/@alexandra.tait">
+									<i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+									<!-- <i class="fa fa-medium fa-2x hidden" aria-hidden="true"></i> -->
+								</a>
+								<p>@alexandra.tait</p>
+							</div>
+							<div class="icon__box flex">
 								<a href="https://github.com/alextait1">
 									<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+									<!-- <i class="fa fa-github fa-2x hidden" aria-hidden="true"></i> -->
 								</a>
 								<p>@alextait1</p>
 							</div>
@@ -286,7 +312,11 @@
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
-	
+	<script src="dev/scripts/_wow.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+
 </body>
 </html>
 

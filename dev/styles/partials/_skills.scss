@@ -53,42 +53,151 @@
 	img{
 	width: 100%;
 	}
+	p{
+		display: none;
+	}
+	&:hover{
+		p{
+			display: block;
+		}
+		transition: all ease-in 0.2s;
+	}
 }
 
 .skill__cards-sublime{
 	background: $cyan;
+	position:relative;
+	.skills__p-sublime{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+
+	}
 }
 
 .skills__card-html{
 	background: $blue;
+	position:relative;
+	.skills__p-html{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-sass{
 	background: $purple;
+	position: relative;
+	.skills__p-sass{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-javascript{
 	background: $greyOne;
+	position: relative;
+	.skills__p-javascript{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-jquery{
 	background: $greyTwo;
+	position: relative;
+	.skills__p-jquery{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-react{
 	background: $greyThree;
+	position: relative;
+	.skills__p-react{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-git{
 	background: $yellow;
+	position: relative;
+	.skills__p-git{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-gulp{
 	background: $greyFour;
+	position: relative;
+	.skills__p-gulp{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 .skills__card-github{
 	background: $green;
+	position: relative;
+	.skills__p-github{
+		position: absolute;
+		bottom:0;
+		left: 50%;
+		padding: 10px;
+		transform: translateX(-50%);
+		color:$medGrey;
+		background:$bodyGrey3;
+		text-transform: uppercase;
+	}
 }
 
 

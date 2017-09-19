@@ -38,6 +38,9 @@
 	left:50%;
 	transform:translateX(-50%);
 	text-align: center;
+	@include respond-to(medium){
+		margin-top:40px;
+	}
 	&:before {
     content:"";
     border-top: 1px solid $darkGrey;
@@ -59,11 +62,19 @@
     transform: translateY(-50%);
 	}
 }
+
+.contact__tagline{
+	padding-top: 120px;
+	padding-bottom: 30px;
+}
 .contact__p-container{
 	position: relative;
 	p{
 		padding-bottom: 60px;
 		text-align: center;
+		@include respond-to(medium){
+			padding: 5%;
+		}
 	}
 	.contact__p:after{
 		content:"";
@@ -82,7 +93,6 @@
 .email__address{
 	text-transform: uppercase;
 	font-size: 20px;
-	// color:$cyan;
 }
 
 .form__header{
@@ -92,6 +102,9 @@
 .form__row-one{
 	margin-top:80px;
 	justify-content: space-between;
+	@include respond-to(small){
+		flex-direction:column;
+	}
 }
 
 .form__row-two{
@@ -119,16 +132,26 @@
 
 }
 
+form{
+	padding: 5%;
+}
+
 .input__text-name, 
 .input__text-email{
 	width:45%;
 	flex-direction:column;
+	@include respond-to (small){
+		width:100%;
+	}
 	input{
 		width:100%;
 		padding:10px;
 	    border:1px solid $lightGrey;
 	  	font-size:25px;
 	    background-color:$lightGrey;
+	    @include respond-to (small){
+	    	font-size:18px;
+	    }
 	    &:hover{
 	    	background: $bodyGrey;
 	    	border: 3px solid $yellow;
@@ -157,6 +180,9 @@
 	text-transform: uppercase;
 	font-size: 20px;
 	padding:16px 40px 16px 40px;
+	@include respond-to (small){
+	    font-size:16px;
+	}
 	&:hover{
 		background-color: darken($cyan, 10%);
 		transform:translateX(-50%) scale(1.05);
