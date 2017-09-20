@@ -13,38 +13,54 @@
 <body>
 
 	<header id="top">
-		<div class="site__banner flex wrapper">
-			<div class="site__banner-left flex">
-				<img src="assets/icons/code.png" alt="computer icon" class="site__banner-icon">
-				<h4 class="site__banner-logo">Alex Tait</h4>
+		<div class="site__banner">
+			<div class="site__banner-inner flex wrapper">
+				<div class="site__banner-left flex">
+					<img src="assets/icons/code.png" alt="computer icon" class="site__banner-icon">
+					<h4 class="site__banner-logo">Alex Tait</h4>
+				</div>
+				<nav class="site__banner-right">
+					<ul class="flex">
+						<a href="#projects" class="scroll"><li>Portfolio</li></a>
+						<a href="#skills" class="scroll"><li>Skills</li></a>
+						<a href="#about" class="scroll"><li>About</li></a>
+						<a href="#contact" class="scroll"><li>Contact</li></a>
+					</ul>
+				</nav>
 			</div>
-			<nav class="site__banner-right">
-				<ul class="flex">
-					<a href="#projects" class="scroll"><li>Portfolio</li></a>
-					<a href="#skills" class="scroll"><li>Skills</li></a>
-					<a href="#about" class="scroll"><li>About</li></a>
-					<a href="#contact" class="scroll"><li>Contact</li></a>
-				</ul>
-			</nav>
 		</div>
-		<div class="site__title wrapper">
+		<div class="site__title flex">
 			<h1>I'm a <span class="cyan">passionate</span> developer dedicated to making <span class="cyan">beautiful</span> interactive sites</h1>
 		</div>
 		
 	</header>
 
-	<section class="about flex">
-		<div class="wrapper__big">
-				<div class="about__text-container">
-				<div class="about__text wrapper">
-					<h3>I love having the ability to make something from nothing and be one of the architects of what we see and interact with every day!</h3>
-					<div class="button__container-home flex">
-						<a href="#projects" class="button__projects scroll"><button>See Some of My Projects</button></a>
-					</div>
-					<div class="about__text-p wrapper__small">
-						<p class="p__one">I wrote my first "hello world" html program in a plain text document in the summer of 2016 and was instantly hooked. On the one hand, I couldn't believe that making something display in a browser was actually as easy as writing a sentence. On the other hand, I realized immediately that if I wanted to make anything good, I would need to dive into a deep world of knowledge and practice. Coming from a background as a musician, the idea of practicing my skills and getting better with each iteration was something familar and exciting.</p>
-					</div>
+		<div class="about__text-container">
+		<div class="about__text wrapper">
+			<div class="button__container-home flex">
+				<a href="#projects" class="button__projects scroll"><button>See Some of My Projects</button></a>
+			</div>
+		</div>
+	</div>
+
+	<section class="aboutMe wrapper scroll" id="about">
+		<div class="aboutMe__heading-container flex">
+			<h2 class="aboutMe__heading">About Me</h2>
+			<p class="tagline aboutMe__tagline">A little bit about where I'm coming from and where I hope to go</p>
+		</div>
+		<img src="assets/wireframing.jpg" alt="alex tait wireframing" class="hidden hidden__img">
+		<div class="aboutMe__container-outer">
+			<div class="aboutMe__container-inner">
+				<h3 class="aboutMe__text-heading">How I Found Code</h3>
+				<p>My web development journey began with building a few Squarespace sites for bands I was working with. I did a few online turorials like Skill Crush and Code Academy and got super into it! Coming from a background as a musician, the idea of practicing my skills and getting better with each iteration was something familar and exciting. I enroled in Hacker You's part-time web development class and that was the game changer for me. This summer I was part of their full-time immersive web development bootcamp, which was just the kickstart I needed to hone my skills and get fully hooked on coding!</p>
+
+				<div class="quote container">
+					<blockquote>I love having the ability to make something from nothing and be one of the architects of what we see and interact with every day.</blockquote>
 				</div>
+
+				<h3 class="interests__text-heading">Interests</h3>
+				<p>My HTML and CSS skills are solid and my JavaScript/ReactJS are getting stronger every day. My dream job would be on a team with great culture, where my exisiting skillset would be useful and where I would be encouraged to grow too. In terms of my long-term career vision, I'm really interested in UX/UI as well as product design and development.</p>
+		
 			</div>
 		</div>
 	</section>
@@ -203,24 +219,6 @@
 			</div>
 		</section>
 
-		<section class="aboutMe wrapper scroll" id="about">
-			<div class="aboutMe__heading-container flex">
-				<h2 class="aboutMe__heading">About Me</h2>
-				<p class="tagline aboutMe__tagline">A little bit about where I'm coming from and where I hope to go</p>
-			</div>
-			<img src="assets/wireframing.jpg" alt="alex tait wireframing" class="hidden hidden__img">
-			<div class="aboutMe__container-outer">
-				<div class="aboutMe__container-inner">
-					<h3 class="aboutMe__text-heading">How I Found Code</h3>
-					<p>My web development journey began with building and maintaining a few Squarespace websites for bands I was in. In doing thatlimitations of the basic platform, and wanted more control over the code. I started doing online coding turorials like Skill Crush and Code Academy and got super into it! I enroled in Hacker You's part-time web development class in the fall of 2016 and that was the game changer for me. I felt so empowered and excieted by the things I was learning and applying, and I was hungry for more.</p>
-					<p class="p__two-about">I wrapped up my music teaching business permanently in the spring of 2017. As of July was attending Hacker You's full-time immersive web development bootcamp, which was just the kickstart I needed to hone my skills and get fully hooked on coding!</p>
-
-					<h3 class="interests__text-heading">Interests</h3>
-					<p>I am highly profficient with HTML and CSS and my JavaScript/ReactJS are getting stronger every day. In terms of my long-term career vision, I am very interested in UX/UI and product design and development. My dream job would be on a team with great culture, where my exisiting skillset would be useful and where I would have some room to grow into new skills too.</p>
-					<p class="p__two-about">I'm currently seeking a full-time front-end web development position here in Toronto for the fall of 2017.</p>
-				</div>
-			</div>
-		</section>
 
 		<section class="contact wrapper scroll" id="contact">
 			<div class="contact__container wrapper__small">

@@ -3,7 +3,6 @@ footer{
 	h6:hover{
 		color:darken($yellow, 10%);
 		transition: all ease 0.1s;
-		padding: 5px 0 5px 0;
 	}
 }
 
@@ -99,6 +98,7 @@ footer{
 	align-items:center;
 	padding: 15px 5px 10px 5px;
 	border-right:10px solid $bodyGrey;
+	border: 1px solid rgba(0,0,0,0);
 	@include respond-to(medium){
 		flex: 0 1 50%;
 	}

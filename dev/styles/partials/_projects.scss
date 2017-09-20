@@ -44,6 +44,10 @@
   }
 }
 
+.projects__tagline{
+	padding-top: 12%;
+}
+
 .other__projects-heading{
 	position: absolute;
 	left:50%;
@@ -52,6 +56,9 @@
 	top:-35%;
 	@include respond-to(medium){
 		top:-2%;
+	}
+	@include respond-to(small){
+		top:-8%;
 	}
 	&:before {
     content:"";

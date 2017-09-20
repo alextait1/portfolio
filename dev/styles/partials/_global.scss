@@ -22,6 +22,11 @@ body{
 	margin:0 auto;
 }
 
+.wrapper__small-extra{
+	max-width:700%;
+	margin:0 auto;
+}
+
 .flex {
 	display: flex;
 }
@@ -107,7 +112,7 @@ p {
 	text-transform: uppercase;
 	font-size: 17px;
 	color:$textGrey;
-	padding-top: 125px;
+	padding-top: 80px;
 	padding-bottom: 60px;
 }
 
@@ -131,6 +136,7 @@ button{
 	text-transform: uppercase;
 	font-size: 20px;
 	padding:16px 40px 16px 40px;
+	box-shadow: 0 8px 10px -6px $textGrey;
 	&:hover{
 		background-color: darken($cyan, 10%);
 		transform:scale(1.05);

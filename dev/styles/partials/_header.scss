@@ -1,18 +1,28 @@
 .site__banner{
 	justify-content: space-between;
+	position: fixed;
+	background-color:$bodyGrey;
+	width:100%;
+	z-index:100;
+	.site__banner-inner {
+		justify-content:space-between;
+	}
+	@include respond-to(medium){
+		position:static;
+	}
+
 }
 
 .site__banner-icon{
-	margin-top: 45px;
+	margin-top: 11%;
 	height:44px;
 	color:$darkGrey;
 	padding-left:10px;
 	@include respond-to (large){
 		height:32px;
-		margin-top:54px;
 	}
 	@include respond-to (medium){
-		height:30px;
+		height:36px;
 	}
 }
 
@@ -22,7 +32,7 @@
 	line-height: 36px;
 	padding-top: 10px;
 	padding-left: 10px;
-	margin-top:48px;
+	margin-top:11%;
 	color:$darkGrey;
 	@include respond-to (large){
 		font-size: 30px;
@@ -36,10 +46,13 @@ nav {
 	ul{
 		margin:0;
 		padding:0;
-		margin-top:66px;
+		margin-top:13%;
+		margin-bottom:2%;
 		@include respond-to(medium){
 			flex-direction: column;
 			padding-right: 40px;
+			margin-top: 57px;
+			margin-top:10%;
 		}
 		@include respond-to(small){
 			padding-right: 20px;
@@ -48,11 +61,15 @@ nav {
 	li{
 		list-style: none;
 		padding:5px 13px 5px 13px;
+		border: 1px solid rgba(0,0,0,0);
 		font-size: 15px;
 		text-transform: uppercase;
 		color:$darkGrey;
 		@include respond-to(medium){
 			border-bottom: 2px solid $cyan;
+			font-size: 20px;
+			padding:9px 0 5px 8px;
+			text-align: right;
 		}
 		&:hover{
 			background: $cyan;
@@ -71,17 +88,28 @@ nav {
 }
 
 .site__title{
-	margin-top: 100px;
 	margin-bottom: 110px;
 	text-align: center;
+	height:100vh;
+	background-image: url(../../assets/coding2.jpg);
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position-y:-50%;
+	background-size: cover;
+	justify-content:center;
+	align-items:center;
 	.cyan{
-	color: $cyan;
+		color:$cyan;
 	}
 	@include respond-to(small){
-		margin-top: 65px;
+		// margin-top: 65px;
 		margin-bottom: 60px;
 	}
 	h1{
+		max-width: 75%;
+		background-color:$bodyGrey2;
+		padding:2%;
 		@include respond-to (x-large){
 			font-size: 55px;
 			margin: 0 auto;
@@ -100,11 +128,11 @@ nav {
 	}
 }
 
-.about{
-	background-image: url(../../assets/coding2.jpg);
-	background-size: cover;
-	justify-content:center;
-}
+// .about{
+// 	background-image: url(../../assets/coding2.jpg);
+// 	background-size: cover;
+// 	justify-content:center;
+// }
 
 
 .about__text-container{
@@ -118,7 +146,7 @@ nav {
 	}
 	h3{
 	 	padding: 85px 140px 60px 140px;
-	 	text-align: center;
+	 	text-align: center; 
 	 	@include respond-to (x-large){
 	 		font-size:30px;
 	 		}
