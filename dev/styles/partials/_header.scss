@@ -102,6 +102,10 @@ nav {
 	.cyan{
 		color:$cyan;
 	}
+	@include respond-to(medium){
+		background-attachment: scroll;
+		background-position-x: 50%;
+	}
 	@include respond-to(small){
 		// margin-top: 65px;
 		margin-bottom: 60px;
@@ -127,13 +131,6 @@ nav {
 		}
 	}
 }
-
-// .about{
-// 	background-image: url(../../assets/coding2.jpg);
-// 	background-size: cover;
-// 	justify-content:center;
-// }
-
 
 .about__text-container{
 	background: $bodyGrey2;
