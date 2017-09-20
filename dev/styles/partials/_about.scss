@@ -11,6 +11,9 @@
 	left:50%;
 	transform:translateX(-50%);
 	text-align: center;
+	@include respond-to(small){
+		margin-top: 30px;
+	}
 	&:before {
     content:"";
     border-top: 1px solid $darkGrey;
@@ -49,6 +52,13 @@
 	background: $bodyGrey3;
 	padding:5%;
 	border: 1px solid rgba(0,0,0,0);
+}
+
+.aboutMe__tagline{
+	@include respond-to(small){
+		padding-top: 75px;
+		padding-bottom: 30px;
+	}
 }
 
 .aboutMe__text-heading{

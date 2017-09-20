@@ -66,6 +66,10 @@
 .contact__tagline{
 	padding-top: 120px;
 	padding-bottom: 30px;
+	@include respond-to(small){
+		padding-top: 80px;
+		padding-bottom: 0;
+	}
 }
 .contact__p-container{
 	position: relative;
@@ -74,6 +78,9 @@
 		text-align: center;
 		@include respond-to(medium){
 			padding: 5%;
+		}
+		@include respond-to(small){
+			padding-bottom: 8%;
 		}
 	}
 	.contact__p:after{
@@ -85,6 +92,9 @@
 	    bottom:0;
 	    transform: translateX(-50%);
 	    padding-bottom: 60px;
+	    @include respond-to(small){
+	    	width:100px;
+	    }
 	}
 }
 .fa-envelope-o{
@@ -98,12 +108,16 @@
 .form__header{
 	text-align: center;
 	margin-top:80px;
+	@include respond-to(small){
+		margin-top: 35px;
+	}
 }
 .form__row-one{
 	margin-top:80px;
 	justify-content: space-between;
 	@include respond-to(small){
 		flex-direction:column;
+		margin-top: 40px;
 	}
 }
 

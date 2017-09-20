@@ -38,6 +38,10 @@
 
 .skills__tagline{
 	padding-top: 70px;
+	@include respond-to(small){
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
 }
 
 .skills__cards{
