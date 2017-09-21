@@ -64,16 +64,13 @@
 
 .aboutMe__text-heading{
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .interests__text-heading{
 	margin:40px 0 40px 0;
 }
 
-// .p__two-about{
-// 	margin-bottom: 25px;
-// 	margin-top: 10px;
-// }
 
 .hidden__img{
 	display:none;
@@ -83,13 +80,3 @@
 	}
 }
 
-blockquote{
-	padding-top: 8%;
-	font-family:$font;
-	text-transform:uppercase;
-	font-weight: 400;
-	line-height: 20px;
-	margin:0;
-	width:80%;
-	margin:0 auto;
-}

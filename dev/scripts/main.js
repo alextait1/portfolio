@@ -1,8 +1,3 @@
-const ohHey = "Hello World";
-
-console.log(ohHey);
-
-
 $(function(){
 	
 	$('.scroll').on('click', function(){
@@ -12,7 +7,8 @@ $(function(){
 		return false;
 	});
 
-	$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
-
+   if ($(this).width() > 480) {
+       new WOW().init();     
+   }
 });
 
