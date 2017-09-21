@@ -18,8 +18,12 @@
 		<div class="site__banner">
 			<div class="site__banner-inner flex wrapper">
 				<div class="site__banner-left flex">
-					<img src="assets/icons/code.png" alt="computer icon" class="site__banner-icon">
-					<h4 class="site__banner-logo">Alex Tait</h4>
+					<a href="#h1" class="scroll">
+						<img src="assets/icons/code.png" alt="computer icon" class="site__banner-icon">
+					</a>
+					<a href="#h1" class="scroll">
+						<h4 class="site__banner-logo">Alex Tait</h4>
+					</a>
 				</div>
 				<nav class="site__banner-right">
 					<ul class="flex">
@@ -32,7 +36,7 @@
 			</div>
 		</div>
 		<div class="site__title flex">
-			<h1>I'm a <span class="cyan">passionate</span> developer dedicated to making <span class="cyan">beautiful</span> interactive sites</h1>
+			<h1 id="h1">I'm a <span class="cyan">passionate</span> developer dedicated to making <span class="cyan">beautiful</span> interactive sites</h1>
 		</div>
 		
 	</header>
@@ -70,7 +74,7 @@
 				</div>
 			</div>
 			<div class="projects__featured">
-				<a href="https://alextait1.github.io/drag_mama/"><img src="assets/dragRace__screenshot.png" alt="RuPaul website homepage" class="dragRace__img"></a>
+				<a href="https://whosyourdragmama.com"><img src="assets/dragRace__screenshot.png" alt="RuPaul website homepage" class="dragRace__img"></a>
 				<div class="about__dragRace wrapper__small flex">
 					<div class="about__dragRace-main">
 						<h3 class="about__dragRace-heading">About This Project</h3>
@@ -84,16 +88,12 @@
 						</a>
 						<div class="aside__text flex">
 							<div class="aside__sub aside__sub-client">
-								<p class="grey__title-light">Client:</p>
-								<p class="grey__title-dark">Hacker You</p>
+								<p class="grey__title-light">Name</p>
+								<p class="grey__title-dark">Who's Your Fairy Drag Mother?</p>
 							</div>
 							<div class="aside__sub aside__sub-skills">
 								<p class="grey__title-light">Skills:</p>
 								<p class="grey__title-dark">React, JavaScript, API/Ajax</p>
-							</div>
-							<div class="aside__sub aside__client-date">
-								<p class="grey__title-light">Project Date:</p>
-								<p class="grey__title-dark">Sept 13th, 2017</p>
 							</div>
 						</div>
 					</aside>
@@ -224,7 +224,7 @@
 				</div>
 				<div class="contact__email-container flex">
 					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<p class="email__address">alexandratait@gmail.com</p>
+					<p class="email__address">hello@alextait.ca</p>
 				</div>
 				<div class="button__hireMe-container">
 					<button class="button__hireMe" onclick="window.location.href='mailto:alexandratait@gmail.com'">Hire Me!</button>
@@ -312,9 +312,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
 	<script src="dev/scripts/_wow.js"></script>
-    <script>
-       new WOW().init();
-    </script>
+    
 
 </body>
 </html>

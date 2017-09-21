@@ -11,9 +11,6 @@
 	left:50%;
 	transform:translateX(-50%);
 	text-align: center;
-	@include respond-to(small){
-		// margin-top: 30px;
-	}
 	&:before {
     content:"";
     border-top: 1px solid $darkGrey;
@@ -39,7 +36,7 @@
 	background-image: url(../../assets/wireframing.jpg);
 	background-position-x: 28%;
 	background-size: cover;
-	padding: 6% 6% 0 40%;
+	padding: 16% 6% 0 40%;
 	@include respond-to (large){
 		padding: 6% 6% 0 6%;
 	}
@@ -51,7 +48,7 @@
 
 .aboutMe__container-inner{
 	background: $bodyGrey3;
-	padding:5%;
+	padding:10% 8% 6% 8%;
 	border: 1px solid rgba(0,0,0,0);
 }
 
