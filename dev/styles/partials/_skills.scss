@@ -47,6 +47,7 @@
 .skills__cards{
 	flex-wrap:wrap;
 	justify-content: space-between;
+	overflow: hidden;
 }
 
 .skills__card {
@@ -54,6 +55,7 @@
 	width:31%;
 	margin-bottom: 30px;
 	background: $lightCyan;
+	overflow: hidden;
 	img{
 	width: 100%;
 	}
@@ -129,10 +131,10 @@
 	}
 }
 
-.skills__card-jquery{
+.skills__card-jquery, .skills__card-angular{
 	background: $greyTwo;
 	position: relative;
-	.skills__p-jquery{
+	.skills__p-jquery, .skills__p-angular{
 		position: absolute;
 		bottom:0;
 		left: 50%;

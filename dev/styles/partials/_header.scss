@@ -14,15 +14,18 @@
 }
 
 .site__banner-icon{
-	margin-top: 11%;
+	margin-top: 25%;
 	height:44px;
 	color:$darkGrey;
 	padding-left:10px;
 	@include respond-to (large){
 		height:32px;
+		margin-top: 44%;
 	}
 	@include respond-to (medium){
 		height:36px;
+		margin-top: 24%;
+
 	}
 }
 
